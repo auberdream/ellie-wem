@@ -22,13 +22,30 @@ p {
   letter-spacing: 1px;
 }
 
+p a {
+  color: hsl(0, 0%, 60%);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.8s ease;
+}
+
+p a:hover {
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+  width: 20px;
+}
+
+p a:active {
+  border-bottom: transparent;
+}
+
+
 /*Header*/
 
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 64px;
   position: absolute;
 }
@@ -66,7 +83,7 @@ nav a {
   color: hsl(0, 0%, 30%);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s ease;
+  transition: border-bottom 0.8s ease;
 }
 
 nav a:hover {
@@ -124,6 +141,7 @@ nav a:active {
   justify-content: flex-end;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 2.5rem;
   text-align: right;
 }
 
@@ -156,4 +174,20 @@ footer {
 footer a {
   padding-right: 1em;
   padding-top: 0.3em;
+}
+
+footer img {
+  transition: all 0.8s ease;
+}
+
+footer img:hover {
+  transform: scale(1.12);
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 730px) {
+  .header span {
+    padding-top: 1em;
+  }
 }
