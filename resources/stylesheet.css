@@ -191,3 +191,23 @@ footer img:hover {
     padding-top: 1em;
   }
 }
+
+@media only screen and (max-width: 620px) {
+  nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  nav {
+    display: none;
+  }
+
+  .banner img {
+    height: 16em;
+  }
+
+  footer {
+
+  }
+}
